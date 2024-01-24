@@ -1,0 +1,30 @@
+1.
+
+git remote -v
+
+2.
+
+git push github maIN
+
+3.
+
+git CLONE https://github.com/FAKE-030/libro-git.git
+echo > autores.txt
+notepad autores.txt
+Escribo:
+        Nombre: FAKE-030 email: jorgelopezc34@gmail.com
+Guardo y salgo
+git add autores.txt
+git commit -m "Añadido autor."
+git push origin main
+
+4.
+
+git clone url
+git checkout -b autoria
+notepad autores.txt
+Escribo:
+        Nombre: JLC-030 email: jorgelopezcanfranc@gmail.com
+Guardo y salgo
+git commit -m "Añadido nuevo autor."
+git push origin autoria
