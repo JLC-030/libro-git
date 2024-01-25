@@ -4,11 +4,11 @@ git remote -v
 
 2.
 
-git push github maIN
+git push github main
 
 3.
 
-git CLONE https://github.com/FAKE-030/libro-git.git
+git clone https://github.com/FAKE-030/libro-git.git
 echo > autores.txt
 notepad autores.txt
 Escribo:
