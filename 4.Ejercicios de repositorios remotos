@@ -20,7 +20,7 @@ git push origin main
 
 4.
 
-git clone url
+git clone https://github.com/FAKE-030/asalber-libro-git.git
 git checkout -b autoria
 notepad autores.txt
 Escribo:
