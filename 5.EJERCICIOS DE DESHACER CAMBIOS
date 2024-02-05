@@ -4,7 +4,7 @@ notepad indice.txt
 Elimino: Capitulo 5: Conceptos avanzados
 Salgo y guardo
 git status
--
+git checkout -- indice.txt
 git status
 
 2.
@@ -13,9 +13,41 @@ Elimino: Capitulo 5: Conceptos avanzados
 Salgo y guardo
 git add indice.txt
 git status
--
+git reset indice.txt
 git status
--
+git checkout -- indice.txt
 git status
 
 3.
+
+notepad indice.txt
+Elimino la ultima linea.
+Guardo y salgo
+rm capitulos/capitulo3.txt
+touch capitulos/capitulo4.txt
+git add indice.txt
+git status
+git reset
+git status
+git checkout -- .
+git status
+git clean -f
+git status
+
+4.
+
+notepad indice.txt
+Elimino la ultima linea.
+Guardo y salgo
+rm capitulos/capitulo3.txt
+git commit -a "Borrado accidental."
+git status
+git log
+git reset --soft HEAD~1
+git status
+git commit -m "Borrado accidental."
+git status
+git log
+git reset --hard HEAD~1
+git log
+git status
